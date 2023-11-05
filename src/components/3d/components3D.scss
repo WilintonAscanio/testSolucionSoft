@@ -1,12 +1,15 @@
 .components3D {
-    position: relative;
+    position: absolute;
     width: 80%;
     height: 380px;
-    margin: -16% 10%;
+    margin: -8% 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
+    bottom: 0;
+
+    
 
     &__id,
     &__shooting,
@@ -24,6 +27,7 @@
     }
     &__id {
         left: 0;
+        bottom: 10%;
     }
     &__shooting, &__key {
         left: 20%;
@@ -50,7 +54,7 @@
         left: 40%;
     }
     &__map {
-        bottom: 30%;
+        bottom: 25%;
     }
   
    
