@@ -1,0 +1,57 @@
+.components3D {
+    position: relative;
+    width: 80%;
+    height: 380px;
+    margin: -16% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    &__id,
+    &__shooting,
+    &__key,
+    &__clothe,
+    &__edit,
+    &__inform,
+    &__pictures,
+    &__map {
+        position: absolute;
+
+    }
+    &__clothe {
+        top: -35%;
+    }
+    &__id {
+        left: 0;
+    }
+    &__shooting, &__key {
+        left: 20%;
+
+    }
+    &__shooting, &__inform {
+        top: 0;
+    }
+    &__key, &__edit, &__pictures {
+        bottom: 18%;
+    }
+    &__map {
+        right: 0;
+    }
+    &__inform {
+        right: 15%;
+        top: -5%;
+    }
+    &__pictures {
+        right: 25%;
+        bottom: 10%;
+    }
+    &__edit {
+        left: 40%;
+    }
+    &__map {
+        bottom: 30%;
+    }
+  
+   
+}
