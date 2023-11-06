@@ -2,7 +2,7 @@
 
 .ourServices {
     width: 80%;
-    margin: 80px 10% 0 10%;
+    margin: 100px 10% 0 10%;
     display: flex;
     flex-direction: column;
     padding: 10px 0;
@@ -10,6 +10,9 @@
 
     h3 {
         text-align: center;
+        color: $color-titles;
+        font-size: 28px;
+        font-weight: 700;
     }
 
     &__header {
@@ -57,6 +60,76 @@
             span {
                 color: $color-buttons;
                 font-weight: 600;
+
+            }
+        }
+    }
+    &__bottom {
+        width: 96%;
+        margin-inline: 2%;
+        display: flex;
+
+        & section {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding-inline: 10px;
+            
+
+            & article {
+                width: 100%;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+
+                & small {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $color-buttons;
+                    cursor: pointer;
+                }
+                .firstCircle {
+                    background-color: $color-titles;
+                }
+            }
+        }
+
+        & figcaption {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50%;
+            padding-inline: 10px;
+
+            & strong {
+                font-size: 22px;
+                font-weight: 600;
+                color: $color-titles;
+            }
+            
+
+            & p {
+                font-size: 16px;
+                font-weight: 500;
+                color: $color-secondary;
+                line-height: 22px;
+                text-transform: capitalize;
+            }
+            & button {
+                height: 55px;
+                border: none;
+                background-color: $color-buttons;
+                border-radius: 8px;
+                width: 258px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                font-weight: 700;
+                font-size: 18px;
+                color: $color-primary;
+                cursor: pointer;
 
             }
         }
