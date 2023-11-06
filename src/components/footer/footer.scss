@@ -1,0 +1,64 @@
+@import '../../variables.scss';
+
+footer {
+    height: 188px;
+    width: 100%;
+    background-color: $color-titles;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-inline: 5%;
+
+    & section {
+        display: flex;
+        width: 80%;
+        align-items: center;
+        gap: 40px;
+
+        & figure img {
+            height: 79px;
+            object-fit: cover;
+        }
+
+        & strong {
+            display: flex;
+            flex-direction: column;
+            color: $color-primary;
+            gap: 5px;
+            font-size: 14px;
+            font-weight: 700;
+
+            & span {
+                color: $color-buttons;
+                font-weight: 500;
+            }
+        }
+
+        & article {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            & small {
+                display: flex;
+                gap: 20px;
+                color: $color-buttons;
+                font-weight: 500;
+
+            }
+        }
+    }
+    .wpp__logo {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+}
