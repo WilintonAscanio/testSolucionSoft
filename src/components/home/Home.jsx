@@ -5,6 +5,8 @@ import OurServices from '../ourServices/OurServices'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
 import OurTeam from '../team/OurTeam'
+import OurClients from '../ourClients/OurClients'
+import ContactUs from '../contactUs/ContactUs'
 
 const Home = () => {
     return (
@@ -14,6 +16,8 @@ const Home = () => {
             <main>
                 <OurServices />
                 <OurTeam />
+                <OurClients />
+                <ContactUs />
             </main>
             <Footer />
         </div>
