@@ -26,7 +26,6 @@ const Navbar = ({ isVisible }) => {
     return (
         <>
             <nav className={open}>
-
                 <ul>
                     <img src={iconClose} alt="cerrar" className={close} onClick={() => openMenu("close")} />
                     <li><a href="#services">Nuestros Servicios</a></li>
@@ -39,7 +38,6 @@ const Navbar = ({ isVisible }) => {
                     <span>/</span>
                     <small className='selected'>Español</small>
                 </section> : <></>}
-
             </nav>
             <img src={menu} alt="hamburguer" className={hamburguer} onClick={() => openMenu("hamburguer")} />
 

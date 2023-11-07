@@ -64,8 +64,6 @@ const Header = () => {
                     <img src={wpp} alt="wpp" />
                 </figure>
             }
-
-
             <Components3D />
 
         </header>

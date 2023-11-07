@@ -46,8 +46,6 @@
                 width: 260px;
             }
         }
-
-
     }
 
     &__right {
@@ -64,11 +62,10 @@
         .img__left {
             left: 66px;
         }
+
         .img__right {
             right: 66px;
         }
-        
-
 
         figcaption {
             display: flex;
@@ -85,15 +82,14 @@
                 display: flex;
                 flex-direction: column;
             }
+
             strong {
                 color: $color-links;
             }
         }
-
     }
-
-
 }
+
 @media(max-width:1150px) {
     .ourTeam {
         flex-direction: column;
@@ -107,6 +103,7 @@
                 margin-top: -100px;
                 width: 402px;
             }
+
             figcaption {
                 width: 70%;
                 text-align: start;
@@ -118,12 +115,9 @@
                     width: 100%;
                     padding: 10px;
                 }
-
-                
-                
             }
-
         }
+
         &__right {
             width: 100%;
 
@@ -131,12 +125,15 @@
                 width: 160px;
                 padding: 10px;
             }
+
             .img__left {
                 left: 0;
             }
+
             .img__right {
                 right: 0;
             }
+
             figcaption {
                 padding: 20px;
                 gap: 20px;
