@@ -7,7 +7,7 @@ import id from '../../assets/I3D/ID.png'
 const ContactUs = () => {
     return (
         <div className='contactUs'>
-            <section>
+            <section className='contactUs__left'>
                 <strong>Contáctanos</strong>
                 <form>
                     <article>
@@ -21,9 +21,9 @@ const ContactUs = () => {
                         </label>
                     </article>
                     <label>
-                        <img src={pencil} alt="edit"/>
+                        <img src={pencil} alt="edit" />
                         Cuéntanos tu idea
-                        <textarea name="" id="" cols="20" rows="5" placeholder='.......'>
+                        <textarea cols="20" rows="5" placeholder='.......'>
 
                         </textarea>
                     </label>
@@ -31,10 +31,13 @@ const ContactUs = () => {
                 </form>
 
             </section>
-            <figure>
-                <img src={internet} alt="earth" />
-                <img src={id} alt="id" />
-            </figure>
+            <section className='contactUs__right'>
+                <figure>
+                    <img src={internet} alt="earth" />
+                    <img src={id} alt="id" className='imgeID' />
+                </figure>
+
+            </section>
         </div>
     )
 }

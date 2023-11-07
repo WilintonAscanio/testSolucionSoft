@@ -5,11 +5,11 @@
     width: 80%;
     margin: 5% 10%;
 
-    & section {
+    &__left {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 50%;
+        width: 55%;
         padding: 20px;
 
         & strong {
@@ -86,16 +86,96 @@
 
     }
 
-    & figure {
+    &__right {
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 50%;
+        width: 45%;
+        height: 400px;
+
+        & figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         & img {
             position: absolute;
             right: 0;
         }
     }
+}
+
+@media (max-width : 1230px) {
+
+    .contactUs {
+        flex-direction: column;
+        justify-content: center;
+
+        &__left {
+            width: 100%;
+            padding-inline: 5%;
+        }
+
+        &__right {
+            width: 80%;
+            height: 200px;
+            margin-bottom: -20%;
+
+
+
+
+            & img {
+                display: flex;
+                align-items: center;
+                width: 277px;
+                object-fit: cover;
+
+            }
+
+            .imgeID {
+                width: 206px;
+            }
+        }
+
+
+
+    }
+}
+
+@media (max-width:900px) {
+    .contactUs {
+
+        &__left {
+
+            & article {
+                flex-direction: column;
+
+
+            }
+
+            & label {
+                width: 100%;
+
+                & input {
+                    width: 100%;
+                }
+
+                & img {
+                    width: 76px;
+                    height: 76px;
+                    top: -10px;
+                    right: -40px;
+                }
+            }
+
+            & form button {
+                align-self: center;
+            }
+
+
+        }
+    }
+
 }

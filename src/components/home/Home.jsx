@@ -9,10 +9,10 @@ import OurClients from '../ourClients/OurClients'
 import ContactUs from '../contactUs/ContactUs'
 
 const Home = () => {
+  
     return (
         <div className='home'>
             <Header />
-            <Components3D />
             <main>
                 <OurServices />
                 <OurTeam />

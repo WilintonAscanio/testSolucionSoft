@@ -64,6 +64,7 @@
             }
         }
     }
+
     &__bottom {
         width: 100%;
         display: flex;
@@ -73,7 +74,7 @@
             flex-direction: column;
             width: 50%;
             padding-inline: 20px;
-            
+
 
             & article {
                 width: 100%;
@@ -89,6 +90,7 @@
                     background-color: $color-buttons;
                     cursor: pointer;
                 }
+
                 .firstCircle {
                     background-color: $color-titles;
                 }
@@ -101,13 +103,14 @@
             justify-content: space-around;
             width: 50%;
             padding-inline: 20px;
+            gap: 20px;
 
             & strong {
                 font-size: 22px;
                 font-weight: 600;
                 color: $color-titles;
             }
-            
+
 
             & p {
                 font-size: 16px;
@@ -116,6 +119,7 @@
                 line-height: 22px;
                 text-transform: capitalize;
             }
+
             & button {
                 height: 55px;
                 border: none;
@@ -131,6 +135,55 @@
                 color: $color-primary;
                 cursor: pointer;
 
+            }
+        }
+    }
+
+}
+
+@media(max-width:1050px) {
+    .ourServices {
+        width: 100%;
+        margin-inline: 0;
+
+        &__header {
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            flex-wrap: wrap;
+
+
+            & figure {
+                height: 80px;
+
+                & img {
+                    display: none;
+                }
+
+                & span {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__bottom {
+            flex-direction: column;
+            width: 80%;
+            margin: 0 10%;
+            gap: 20px;
+
+            & section {
+                width: 100%;
+                padding: 0;
+
+            }
+            & figcaption {
+                width: 100%;
+                padding: 0;
+
+                & button {
+                    align-self: center;
+                }
             }
         }
     }

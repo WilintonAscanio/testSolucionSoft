@@ -2,12 +2,12 @@
     position: absolute;
     width: 80%;
     height: 380px;
-    margin: -8% 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
     bottom: 0;
+    margin: -10% 10%;
 
     
 
@@ -58,4 +58,48 @@
     }
   
    
+}
+@media(max-width : 900px){
+    .components3D {
+        width: 100%;
+        margin: 0;
+        height: 200px;
+        bottom: -10%;
+
+
+        &__map, &__id {
+            display: none;
+        }
+
+        &__shooting {
+            left: 0;
+            width: 105px;
+            height: 94px;
+        }
+        &__key {
+            left: 5%;
+            bottom: 0;
+            width: 109px;
+        }
+        &__inform {
+            // right: -12%;
+            width: 124px;
+            height: 141px;
+        }
+        &__pictures {
+            right: 0;
+            bottom: -10%;
+            width: 131px;
+        }
+        &__clothe {
+            width: 312px;
+            // top: -70%;
+            top: -50%;
+        }
+        &__edit {
+            width: 98px;
+            bottom: 10%;
+        }
+
+    }
 }

@@ -6,13 +6,12 @@
     width: 100%;
     height: 100%;
     font-size: 16px;
-    // color: $color-primary;
 
     &__header {
         display: flex;
         flex-direction: column;
         background: url('../../assets/bgUp.png'),
-        linear-gradient(0deg, rgba(60, 129, 113, 1) 0%, rgba(21, 46, 61, 1) 100%);
+            linear-gradient(0deg, rgba(60, 129, 113, 1) 0%, rgba(21, 46, 61, 1) 100%);
         color: $color-primary;
         height: 605px;
         background-size: contain;
@@ -36,27 +35,24 @@
                 height: 70px;
             }
         }
+
         &__right {
             display: flex;
             gap: 20px;
             align-items: center;
 
-            & figure {
-                display: flex;
-                align-items: center;
-                height: 40px;
-                gap: 5px;
-                background-color: $color-buttons;
-                border-radius: 5px;
-                width: 177px;
-                justify-content: center;
-                font-weight: bold;
-                height: 49px;
+            & small {
+                border-bottom: 1px solid;
+                cursor: pointer;
+            }
 
-            
+            .selected {
+                color: $color-links;
 
             }
+
         }
+
         &__details {
             display: flex;
             justify-content: center;
@@ -67,7 +63,7 @@
             font-weight: 400;
             letter-spacing: 4.3px;
         }
-        
+
         h1 {
             text-align: center;
             font-size: 80px;
@@ -76,6 +72,7 @@
             letter-spacing: 1.6px;
             margin-top: 10px;
         }
+
         &__arrows {
             display: flex;
             align-items: center;
@@ -85,6 +82,45 @@
             justify-content: space-between;
         }
 
+        .contactBtn__bottom, .contactBtn__top {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            gap: 5px;
+            background-color: $color-buttons;
+            border-radius: 5px;
+            width: 177px;
+            justify-content: center;
+            font-weight: bold;
+            height: 49px;
+            cursor: pointer;
+
+            & small {
+                border: none;
+            }
+
+
+
+        }
+
+    }
+
+}
+@media (max-width : 900px) {
+
+    .home {
+
+        & h1 {
+            font-size: 55px;
+        }
+
+        .contactBtn__top {
+            display: none;
+        }
+        .contactBtn__bottom {
+            align-self: center;
+            margin: 20px;
+        }
     }
 
 }

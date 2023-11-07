@@ -49,6 +49,7 @@ footer {
             }
         }
     }
+
     .wpp__logo {
         width: 20%;
         display: flex;
@@ -58,6 +59,19 @@ footer {
         & img {
             width: 70px;
             height: 70px;
+        }
+    }
+
+}
+
+@media(max-width:1250px) {
+
+    footer {
+        height: 100%;
+        padding: 0;
+
+        & section {
+            flex-direction: column;
         }
     }
 
