@@ -7,24 +7,6 @@ import left from '../../assets/before.svg'
 import right from '../../assets/next.svg'
 
 const Header = () => {
-    const [isVisible, setIsVisible] = useState(true);
-
-    useEffect(() => {
-        const handleResize = () => {
-            const newWidth = window.innerWidth;
-            if (newWidth < 900) {
-                setIsVisible(false);
-            } else {
-                setIsVisible(true);
-            }
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
 
     return (
         <header className='home__header'>
@@ -33,11 +15,9 @@ const Header = () => {
                     <img src={logo} alt="logo" />
                 </figure>
                 <article className='home__header__right'>
-                    {isVisible ? <>
-                        <small>Inglés</small>
-                        <span>/</span>
-                        <small className='selected'>Español</small>
-                    </> : <></>}
+                    <small>Inglés</small>
+                    <span>/</span>
+                    <small className='selected'>Español</small>
 
                     <figure className='contactBtn__top'>
                         <small>Contáctanos</small>
@@ -45,7 +25,7 @@ const Header = () => {
                     </figure>
                 </article>
             </section>
-            <Navbar isVisible={isVisible} />
+            <Navbar />
             <article className='home__header__details'>
                 <small>WEBSITE</small>
                 <span>-</span>
@@ -54,16 +34,16 @@ const Header = () => {
                 <small>BRANDING</small>
             </article>
             <h1>Creativity</h1>
-            {isVisible ?
-                <figure className='home__header__arrows'>
-                    <img src={left} alt="left" />
-                    <img src={right} alt="right" />
-                </figure> :
-                <figure className='contactBtn__bottom '>
-                    <small>Contáctanos</small>
-                    <img src={wpp} alt="wpp" />
-                </figure>
-            }
+
+            <figure className='home__header__arrows'>
+                <img src={left} alt="left" />
+                <img src={right} alt="right" />
+            </figure>
+            <figure className='contactBtn__bottom' id='contactBtn__bottom'>
+                <small>Contáctanos</small>
+                <img src={wpp} alt="wpp" />
+            </figure>
+
             <Components3D />
 
         </header>

@@ -3,7 +3,7 @@ import './navbar.scss'
 import menu from '../../assets/I3D/menu.png'
 import iconClose from '../../assets/I3D/close.png'
 
-const Navbar = ({ isVisible }) => {
+const Navbar = () => {
     const [hamburguer, setHamburguer] = useState('hidden')
     const [close, setClose] = useState('closeMenu')
     const [open, setOpen] = useState('')
@@ -33,11 +33,11 @@ const Navbar = ({ isVisible }) => {
                     <li><a href="#team">Equipo</a></li>
                     <li><a href="#contactUs">Contáctanos</a></li>
                 </ul>
-                {!isVisible ? <section id='language'>
+                <section id='language'>
                     <small>Inglés</small>
                     <span>/</span>
                     <small className='selected'>Español</small>
-                </section> : <></>}
+                </section>
             </nav>
             <img src={menu} alt="hamburguer" className={hamburguer} onClick={() => openMenu("hamburguer")} />
 
