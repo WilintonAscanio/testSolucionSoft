@@ -4,15 +4,110 @@ nav {
     ul {
         display: flex;
         justify-content: center;
-        gap: 20px;
         list-style: none;
-        
+        gap: 20px;
 
-        & li {
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li {
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
+            text-align: center;
+            padding: 5px;
+
+        }
+
+        li:nth-child(2) {
+            color: #92FFE6;
+            border-bottom: 3px solid #92FFE6;
+        }
+
+
+    }
+
+
+
+}
+
+.hidden {
+    display: none;
+}
+
+.closeMenu {
+    display: none;
+}
+
+
+@media (max-width:900px) {
+
+    .hidden {
+        display: block;
+        object-fit: contain;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background-blend-mode: screen;
+    }
+
+    nav {
+        position: fixed;
+        padding: 20px;
+        display: none;
+        width: 257px;
+        right: 0;
+        height: 326px;
+        background-color: #152E3D;
+        z-index: 100;
+        justify-content: space-between;
+
+        figure {
+            display: flex;
+            justify-content: end;
+        }
+
+        ul {
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            margin-top: 40px;
+
+
+            li:nth-child(2) {
+                border: none;
+            }
+
+            li:nth-child(3) {
+                border-bottom: 1px solid #92FFE6;
+
+                a {
+                    color: #92FFE6;
+                }
+
+            }
+        }
+
+        #language {
+            display: flex;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            padding: 20px 10px;
+            justify-content: start;
+            gap: 20px;
+
+            .selected {
+                border-bottom: 1px solid #92FFE6;
+                color: #92FFE6;
+            }
+
         }
     }
 
+    .open {
+        display: block;
+    }
 }

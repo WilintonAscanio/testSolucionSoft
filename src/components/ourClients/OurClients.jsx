@@ -5,7 +5,7 @@ import clientsRight from '../../assets/clientsRight.png'
 
 const OurClients = () => {
     return (
-        <div className='ourClients'>
+        <div className='ourClients' id='clients'>
             <strong>Nuestros Clientes</strong>
             <figure>
                 <img src={clientsLeft} alt="clientsLeft" />

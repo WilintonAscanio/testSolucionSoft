@@ -7,23 +7,21 @@
     gap: 40px;
     padding-top: 10px;
 
-    & strong {
+    strong {
         color: #152E3D;
         font-size: 28px;
         font-weight: 700;
     }
 
-    & figure {
+    figure {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-inline: 2px;
 
-        & img {
+        img {
             width: 50%;
         }
-
-     
     }
     hr {
         width: 95%;
@@ -31,5 +29,19 @@
         height: 2px;
         border: none;
         background-color: #58B59F;
+    }
+}
+@media(max-width:900px){
+    .ourClients {
+        width: 90%;
+        margin: 10% 5%;
+
+        figure {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }

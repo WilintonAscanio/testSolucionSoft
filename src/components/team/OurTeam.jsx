@@ -7,7 +7,7 @@ import man from '../../assets/man.png'
 
 const OurTeam = () => {
   return (
-    <div className='ourTeam'>
+    <div className='ourTeam' id='team'>
       <figure className='ourTeam__left'>
         <img src={cohete} alt="cohete" />
         <figcaption>

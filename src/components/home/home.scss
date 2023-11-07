@@ -18,10 +18,10 @@
         background-blend-mode: screen;
         position: relative;
 
-        & section {
+        section {
             display: flex;
             justify-content: space-between;
-            margin: 10px 10%;
+            margin: 10px 5%;
             align-items: center;
             margin-bottom: 0;
 
@@ -30,8 +30,10 @@
         &__left {
             display: flex;
             align-items: center;
+            width: 250px;
+            justify-content: center;
 
-            & img {
+            img {
                 height: 70px;
             }
         }
@@ -40,8 +42,9 @@
             display: flex;
             gap: 20px;
             align-items: center;
+            padding-inline: 20px;
 
-            & small {
+            small {
                 border-bottom: 1px solid;
                 cursor: pointer;
             }
@@ -50,7 +53,6 @@
                 color: $color-links;
 
             }
-
         }
 
         &__details {
@@ -82,7 +84,8 @@
             justify-content: space-between;
         }
 
-        .contactBtn__bottom, .contactBtn__top {
+        .contactBtn__bottom,
+        .contactBtn__top {
             display: flex;
             align-items: center;
             height: 40px;
@@ -95,28 +98,43 @@
             height: 49px;
             cursor: pointer;
 
-            & small {
+            small {
                 border: none;
             }
-
-
-
         }
-
     }
-
 }
+
 @media (max-width : 900px) {
 
     .home {
 
-        & h1 {
+        &__header {
+            height: 550px;
+
+            section {
+                margin: 0;
+                padding: 20px;
+
+            }
+
+            &__details {
+                font-size: 16px;
+                flex-wrap: wrap;
+            }
+            &__left {
+                width: 80px;
+            }
+        }
+
+        h1 {
             font-size: 55px;
         }
 
         .contactBtn__top {
             display: none;
         }
+
         .contactBtn__bottom {
             align-self: center;
             margin: 20px;

@@ -33,16 +33,19 @@ const Header = () => {
                     <img src={logo} alt="logo" />
                 </figure>
                 <article className='home__header__right'>
-                    <small>Inglés</small>
-                    <span>/</span>
-                    <small className='selected'>Español</small>
+                    {isVisible ? <>
+                        <small>Inglés</small>
+                        <span>/</span>
+                        <small className='selected'>Español</small>
+                    </> : <></>}
+
                     <figure className='contactBtn__top'>
                         <small>Contáctanos</small>
                         <img src={wpp} alt="wpp" />
                     </figure>
                 </article>
             </section>
-            <Navbar />
+            <Navbar isVisible={isVisible} />
             <article className='home__header__details'>
                 <small>WEBSITE</small>
                 <span>-</span>

@@ -39,7 +39,7 @@ const services = [
 
 const OurServices = () => {
   return (
-    <div className='ourServices'>
+    <div className='ourServices' id='services'>
       <h3>Nuestros Servicios</h3>
       <section className='ourServices__header'>
         {services.map((service, index) =>
@@ -54,10 +54,10 @@ const OurServices = () => {
         <section>
           <img src={views} alt="views" />
           <article>
-          <small className='firstCircle'></small>
-          <small></small>
-          <small></small>
-          <small></small>
+            <small className='firstCircle'></small>
+            <small></small>
+            <small></small>
+            <small></small>
           </article>
         </section>
         <figcaption>

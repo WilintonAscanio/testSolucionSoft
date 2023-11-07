@@ -6,7 +6,7 @@ import id from '../../assets/I3D/ID.png'
 
 const ContactUs = () => {
     return (
-        <div className='contactUs'>
+        <div className='contactUs' id='contactUs'>
             <section className='contactUs__left'>
                 <strong>Contáctanos</strong>
                 <form>
